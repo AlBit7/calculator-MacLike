@@ -1,0 +1,86 @@
+:root {
+    --altezza-pulsanti: 13vh;
+    --altezza-schermo: calc(var(--altezza-pulsanti) * 1.4);
+    --larghezza-pulsanti: calc(var(--altezza-pulsanti) * 1.1);
+
+    --colore-numeri: rgb(111, 111, 111);
+    --colore-operatori: rgb(242, 163, 60);
+    --colore-funzione: rgb(80, 81, 82);
+    --colore-schermo: rgb(88, 89, 90);
+
+    --grandezza-font: 7vh;
+    --grandezza-font-schermo: calc(var(--grandezza-font) * 2);
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: var(--grandezza-font);
+    color: white;
+}
+
+.centra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.operatore {
+    background-color: var(--colore-operatori);
+}
+
+.numero {
+    background-color: var(--colore-numeri);
+}
+
+.funzione {
+    background-color: var(--colore-funzione);
+}
+
+.schermo {
+    background-color: var(--colore-schermo);
+}
+
+.numero, .funzione {
+   -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+table, td {
+    border: 1px solid black;
+}
+
+.tg {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.tg td th {
+	border-color: black;
+	border-style: solid;
+	border-width: 1px;
+	overflow: hidden;
+}
+
+.tg .tg-baqh {
+	text-align: center;
+	vertical-align: center;
+    width: var(--larghezza-pulsanti);
+    height: var(--altezza-pulsanti);
+    cursor: pointer;
+}
+
+.tg .tg-0lax {
+	text-align: right;
+	vertical-align: bottom;
+}
+
+.tg-0lax {
+    height: var(--altezza-schermo);
+    font-size: var(--grandezza-font-schermo);
+}
